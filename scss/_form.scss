@@ -1,0 +1,42 @@
+.form {
+  padding: rem(25) rem(32);
+  border: 1px solid $grey-light;
+  border-radius: $radius;
+  margin: rem(40) auto;
+  max-width: rem(950);
+
+  &__item {
+    margin-bottom: rem(20);
+  }
+
+  &__title {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  &__message {
+    color: $error;
+    text-indent: rem(8);
+    display: inline-block;
+    font-weight: 400;
+    font-size: rem(14);
+    opacity: 0;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item.error &__message {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: rem(35) rem(32);
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: rem(35) rem(16);
+  }
+}

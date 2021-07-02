@@ -1,0 +1,20 @@
+@import "./mixins";
+@import "./font";
+@import "./variables";
+@import "./typography";
+@import "./button";
+@import "./input";
+@import "./checkbox";
+@import "./select";
+@import "./grid";
+@import "./form";
+@import "./flex";
+@import "./utilities";
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Verdana", sans-serif;
+  font-size: 100%;
+}

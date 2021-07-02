@@ -1,0 +1,304 @@
+{block content}
+
+    <h1>Žádost o půjčku (Krok 1 - Osobní údaje)</h1>
+
+    <form class="form">
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="monthlyIncome">
+                        Váš čistý měsíční příjem: (Kč)
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="form__group" data-validate="number">
+                        <input type="number" class="input " id="monthlyIncome" />
+                        <div class="form__message">
+                            Čistý měsíční příjem musí být kladné, max. 10ti ciferné číslo s dvěma desetinnými místy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--33">
+                    <label class="label">
+                        Zdroj Vašich příjmů
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="form__group" data-validate="required">
+                        <label class="label text-normal checkbox" for="checkbox1">
+                            <input type="checkbox" class="js-checkbox" id="checkbox1" />
+                            <span class="checkbox__fake"></span>
+                            Zaměstnání - pracovní smlouva
+                        </label>
+                        <label class="label text-normal checkbox" for="checkbox2">
+                            <input type="checkbox" class="js-checkbox" id="checkbox2" />
+                            <span class="checkbox__fake"></span>
+                            OSVČ
+                        </label>
+                        <label class="label text-normal checkbox" for="checkbox3">
+                            <input type="checkbox" class="js-checkbox" id="checkbox3" />
+                            <span class="checkbox__fake"></span>
+                            důchod
+                        </label>
+                        <label class="label text-normal checkbox" for="checkbox4">
+                            <input type="checkbox" class="js-checkbox" id="checkbox4" />
+                            <span class="checkbox__fake"></span>
+                            DPP/DPČ
+                        </label>
+                        <label class="label text-normal checkbox" for="checkbox5">
+                            <input type="checkbox" class="js-checkbox"  id="checkbox5" />
+                            <span class="checkbox__fake"></span>
+                            jiné
+                            <div class="form__message">
+                                Musí být vybrát alespoň jeden zdroj příjmů
+                            </div>
+                        </label>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--100">
+                    <h3 class="form__title">
+                        Měsíční výdaje
+                    </h3>
+                </div>
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="repayments">
+                        Pravidelné splátky půjček: (Kč)
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="form__group" data-validate="number">
+                        <input type="number" class="input" id="repayments">
+                        <div class="form__message">
+                            Pravidelné splátky musí být kladné, max. 10ti ciferné číslo s dvěma desetinnými místy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="spendings">
+                        Průměrné měsíční výdaje: (Kč)
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="form__group" data-validate="number">
+                        <input type="number" class="input" id="spendings">
+                        <div class="form__message">
+                            Pravidelné splátky musí být kladné, max. 10ti ciferné číslo s dvěma desetinnými místy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--100">
+                    <h3 class="form__title">
+                        Bydlení
+                    </h3>
+                </div>
+                <div class="grid__col grid__col--33">
+                    <label class="label">
+                        Druh bydlení:
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">--- Vyberte ---</option>
+                            <option value="1">Vlastní</option>
+                            <option value="2">Nájem</option>
+                            <option value="3">Ostatní</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Vyberte druh bydlení
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--33">
+                    <label class="label">
+                        Délka pobytu na současné adrese:
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">--- Vyberte ---</option>
+                            <option value="1">Méně než rok</option>
+                            <option value="2">Více než rok</option>
+                            <option value="3">Více než 5 let</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Vyberte délku pobytu na současné adrese
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--100">
+                    <h3 class="form__title">
+                        Dosažené vzdělání
+                    </h3>
+                </div>
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="">
+                        Dosažené vzdělání:
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">--- Vyberte ---</option>
+                            <option value="1">Základní</option>
+                            <option value="2">střední škola</option>
+                            <option value="3">vysoká škola</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Vyberte dosažené vzdělání
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--100">
+                    <h3 class="form__title">
+                        Rodina
+                    </h3>
+                </div>
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="">
+                        Rodinný stav:
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">--- Vyberte ---</option>
+                            <option value="1">svobodný</option>
+                            <option value="2">ženatý</option>
+                            <option value="3">rozvedený</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Vyberte rodinný stav
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--75">
+                    <label class="label" for="">
+                        Kolik dospělých členů domácnosti nemá vlastní příjem:
+                    </label>
+                </div>
+                <div class="grid__col grid__col--25">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">--- Vyberte ---</option>
+                            <option value="1">0</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="5">4</option>
+                            <option value="6">5</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Vyberte počet dospělých členů domácnosti bez vlastního příjmu:
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--75">
+                    <label class="label" for="">
+                        Kolik dětí do 26 let bez vlastního příjmu žije ve společné domácnosti
+                    </label>
+                </div>
+                <div class="grid__col grid__col--25">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">--- Vyberte ---</option>
+                            <option value="1">0</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="5">4</option>
+                            <option value="6">5</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Vyberte počet dětí do 26 let bez vlastního příjmu ve společné domácnosti
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--100">
+                    <h3 class="form__title">
+                        Bankovní účet
+                    </h3>
+                </div>
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="account">
+                        Číslo účtu
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="form__group" data-validate="account">
+                        <input class="input" id="account" />
+                        <div class="form__message">
+                            Prosím, vyplňte číslo účtu
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <div class="grid">
+                <div class="grid__col grid__col--33">
+                    <label class="label" for="">
+                        Kód banky
+                    </label>
+                </div>
+                <div class="grid__col grid__col--66">
+                    <div class="select" data-validate="required">
+                        <select>
+                            <option value="0">Kód banky</option>
+                            <option value="1">0100 (Komerční banka)</option>
+                            <option value="2">0300 (ČSOB)</option>
+                            <option value="3">2010 (Fio banka)</option>
+                        </select>
+                    </div>
+                    <div class="form__message">
+                        Prosím vyberte kód banky
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn--primary">Uložit</button>
+    </form>
+
+{/block}

@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  font-size: rem(16);
+  color: $white;
+  padding: rem(8) rem(20);
+  border-radius: $radius;
+  transition: $transition background;
+
+  &:focus-visible,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background: $primary;
+
+    &:hover,
+    &:focus {
+      background: darken($primary, 5%);
+      color: $white;
+    }
+  }
+}
